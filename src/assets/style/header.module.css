@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color:aliceblue;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.search_input{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 17px;
+   border-radius: 20px;
+}
+.input{
+    background-color: white;
+    width: 50%;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+}
+.input:hover{
+
+    border:1px solid green
+}
+.search_button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.login{
+    padding:5px 20px;
+    height: 40px;
+    border: none;
+    background-color:darkseagreen;
+    color: white;
+    border-radius: 15px;
+}

@@ -1,0 +1,15 @@
+.container{
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.salam{
+    width: 90%;
+    padding-top: 100px;
+}
+.absolute{
+    position: absolute;
+    bottom: 80px;
+}
