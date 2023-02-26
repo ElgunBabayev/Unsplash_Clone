@@ -3,9 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    
 }
-.salam{
+.card{
     width: 90%;
     padding-top: 100px;
 }
