@@ -51,24 +51,30 @@ function Home() {
       title: "salam",
     },
   ];
+
   return (
     <>
       <Header />
       <div className={homeCSS.container}>
-        <ImageList variant="masonry" cols={3} gap={8}>
+        <ImageList className={homeCSS.cardlist} variant="masonry" cols={3} gap={8}>
           {itemData.map((item) => (
-            <ImageListItem className={homeCSS.card} key={item.img}>
+            <ImageListItem
+              className={homeCSS.card}
+              key={item.img}
+            >
               <img
                 src={`${item.img}?w=248&fit=crop&auto=format`}
                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                alt=""
               />
-              <div className={homeCSS.blur}>
+              <div
+              key={item.img}
+                className={homeCSS.blur}
+              > 
                 <div className={homeCSS.buttondiv}>
                   <button className={homeCSS.button}>Delete</button>
                 </div>
-             
-                <div className={homeCSS.label}>Something</div>
-                
+                <div className={homeCSS.label}>Loreen ipsum sit dolor amet</div>
               </div>
             </ImageListItem>
           ))}
