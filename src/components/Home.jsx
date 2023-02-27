@@ -1,5 +1,5 @@
-import React from 'react'
-import Header from './Header'
+import React from "react";
+import Header from "./Header";
 import { ImageList, ImageListItem } from "@mui/material";
 import homeCSS from "../assets/style/home.module.css";
 import photo1 from "../assets/images/gallery/photo-1.jpg";
@@ -12,13 +12,11 @@ import photo7 from "../assets/images/gallery/photo-7.jpg";
 import photo8 from "../assets/images/gallery/photo-8.jpg";
 import photo9 from "../assets/images/gallery/photo-9.jpg";
 
-
 function Home() {
-
   const itemData = [
     {
       img: photo1,
-      title: "salam",
+      title: "sagol",
     },
     {
       img: photo2,
@@ -55,29 +53,29 @@ function Home() {
   ];
   return (
     <>
-<Header/>
-<div className={homeCSS.container}>
-        <div className={homeCSS.card}>
-        <ImageList variant="masonry" cols={3} gap={12}>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-            //   loading="lazy"
-            />
-            <div className={homeCSS.absolute}><p>Salam</p></div>
-          </ImageListItem>
-        ))}
-      </ImageList>
-        </div>
-      
-    </div>
-      
+      <Header />
+      <div className={homeCSS.container}>
+        <ImageList variant="masonry" cols={3} gap={8}>
+          {itemData.map((item) => (
+            <ImageListItem className={homeCSS.card} key={item.img}>
+              <img
+                src={`${item.img}?w=248&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              />
+              <div className={homeCSS.blur}>
+                <div className={homeCSS.buttondiv}>
+                  <button className={homeCSS.button}>Delete</button>
+                </div>
+             
+                <div className={homeCSS.label}>Something</div>
+                
+              </div>
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </div>
     </>
-
-  )
+  );
 }
 
-export default Home
+export default Home;
