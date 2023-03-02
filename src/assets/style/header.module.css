@@ -4,6 +4,8 @@
     padding: 15px 20px;
     background-color:aliceblue;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 .logo{
     width: 50px;

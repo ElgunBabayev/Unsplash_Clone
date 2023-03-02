@@ -1,13 +1,14 @@
 import './assets/style/main.css'
-// import Home from './components/Home';
 import Detail from './components/Detail'
-// import Layout from './layout/Layout';
+import Layout from './layout/Layout';
+import Test from './components/Test'
 
 function App() {
   return (
     <>
-    {/* <Home/> */}
+    <Layout/>
     <Detail/>
+    {/* <Test/> */}
     </>
   );
 }
