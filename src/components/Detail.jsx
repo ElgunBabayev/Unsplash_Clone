@@ -8,6 +8,14 @@ import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined
 
 
 function Detail() {
+
+  const [like, setlike] = useState(false)
+  const [count, setcount] = useState(0)
+
+  const handleClick = () => {
+    setlike(!like);
+    setcount(count + (like ? -1 : 1));
+  };
  
   return (
     <>
@@ -21,9 +29,9 @@ function Detail() {
               <span className={detailCSS.authorName}>Efimiya Abramova</span>
             </div>
             <div className={detailCSS.likediv}>
-              <button className={detailCSS.likeButton}>
-                <FavoriteIcon color="action"/>
-                18
+              <button className={detailCSS.likeButton} onClick = {handleClick}>
+                {like ? <FavoriteIcon color = 'error'/> : <FavoriteIcon color = 'action'/>
+                }{count}
               </button>
             </div>
           </div>
