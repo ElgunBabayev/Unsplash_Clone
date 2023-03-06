@@ -43,9 +43,6 @@
   font-family: Poppins;
   color: gray;
 }
-/* .likeButton:hover{
-    background-color: deepskyblue;
-} */
 .likediv {
   display: flex;
   align-items: center;

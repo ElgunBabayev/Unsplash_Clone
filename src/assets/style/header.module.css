@@ -1,49 +1,83 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-    background-color:aliceblue;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color:aliceblue;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 5;
 }
-.logo{
-    width: 50px;
-    height: 50px;
+.logo {
+  width: 50px;
+  height: 50px;
 }
-.search_input{
-    outline: none;
-    border: none;
-    width: 100%;
-    padding: 10px 5px;
-    font-size: 17px;
-   border-radius: 20px;
+.search_input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 17px;
+  border-radius: 20px;
 }
-.input{
-    background-color: white;
-    width: 50%;
-    align-items: center;
-    display: flex;
-    border-radius: 20px;
+.input {
+  background-color: white;
+  width: 50%;
+  align-items: center;
+  display: flex;
+  border-radius: 20px;
 }
-.input:hover{
-
-    border:1px solid green
+.input:hover {
+  border: 1px solid green;
 }
-.search_button{
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
+.search_button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
 }
-.login{
-    padding:5px 20px;
-    height: 40px;
-    border: none;
-    background-color:darkseagreen;
-    color: white;
-    border-radius: 15px;
+.loggedpers {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 14px;
+  padding: 0px 5px;
+  position: relative;
+  cursor: pointer;
+}
+.logPerson {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  padding: 5px;
+  gap: 7px;
+  border: 1px solid gray;
+  right: 0;
+  top: 50px;
+  width: 100px;
+}
+.options span{
+  color:gray;
+}
+.login {
+  padding: 5px 20px;
+  height: 40px;
+  border: none;
+  background-color: darkseagreen;
+  color: white;
+  border-radius: 15px;
 }

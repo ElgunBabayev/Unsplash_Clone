@@ -24,7 +24,7 @@ function Detail() {
           <div className={detailCSS.header}>
             <div className={detailCSS.authorInfo}>
               <div className={detailCSS.person}>
-                <img src={person1} />
+                <img src={person1} alt=''/>
               </div>
               <span className={detailCSS.authorName}>Efimiya Abramova</span>
             </div>
@@ -37,7 +37,7 @@ function Detail() {
           </div>
           <div className={detailCSS.box}>
             <div className={detailCSS.mainphoto}>
-              <img src={photo2} />
+              <img src={photo2} alt=''/>
             </div>
             <div className={detailCSS.aboutPhoto}>
             <p>
