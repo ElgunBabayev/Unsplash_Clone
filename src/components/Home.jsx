@@ -60,11 +60,18 @@ function Home() {
       title: "salam",
     },
   ];
-  const [like, setlike] = useState(false)
- 
+  // const [like, setlike] = useState(false)
 
-  const handleClick = () => {
-    setlike(!like);
+  // const handleClick = () => {
+  //   setlike(!like);
+  // };
+  const [like, setLike] = useState(-1);
+
+  const liked = (i) => {
+    setLike(i);
+  };
+  const unliked = () => {
+    setLike(-1);
   };
 
   return (
@@ -76,7 +83,7 @@ function Home() {
           cols={3}
           gap={8}
         >
-          {itemData.map((item) => (
+          {itemData.map((item,i) => (
             <ImageListItem className={homeCSS.card} key={item.img}>
               <img
                 src={`${item.img}?w=248&fit=crop&auto=format`}
@@ -85,11 +92,8 @@ function Home() {
               />
               <div key={item.img} className={homeCSS.blur}>
                 <div className={homeCSS.buttondiv}>
-                  <button
-                    className={homeCSS.likebtn}
-                    onClick={handleClick}
-                  >
-                    {like ? (
+                  <button className={homeCSS.likebtn} onClick={setLike(i)}>
+                    {like === i ? (
                       <FavoriteIcon color="error" />
                     ) : (
                       <FavoriteIcon color="action" />
