@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ImageList, ImageListItem } from "@mui/material";
 import homeCSS from "../assets/style/home.module.css";
 import photo1 from "../assets/images/gallery/photo-1.jpg";
@@ -65,14 +65,6 @@ function Home() {
   // const handleClick = () => {
   //   setlike(!like);
   // };
-  const [like, setLike] = useState(-1);
-
-  const liked = (i) => {
-    setLike(i);
-  };
-  const unliked = () => {
-    setLike(-1);
-  };
 
   return (
     <>
@@ -92,12 +84,9 @@ function Home() {
               />
               <div key={item.img} className={homeCSS.blur}>
                 <div className={homeCSS.buttondiv}>
-                  <button className={homeCSS.likebtn} onClick={setLike(i)}>
-                    {like === i ? (
+                  <button className={homeCSS.likebtn} >
                       <FavoriteIcon color="error" />
-                    ) : (
-                      <FavoriteIcon color="action" />
-                    )}
+                      {/* <FavoriteIcon color="action" /> */}
                   </button>
                   <button className={homeCSS.button}>Delete</button>
                 </div>
