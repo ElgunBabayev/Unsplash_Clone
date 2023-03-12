@@ -11,6 +11,8 @@ import photo7 from "../assets/images/gallery/photo-7.jpg";
 import photo8 from "../assets/images/gallery/photo-8.jpg";
 import photo9 from "../assets/images/gallery/photo-9.jpg";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import DeleteIcon from '@mui/icons-material/Delete';
+import authorph from '../assets/images/persons/person-1.avif';
 
 function Home() {
   const itemData = [
@@ -84,11 +86,17 @@ function Home() {
               />
               <div key={item.img} className={homeCSS.blur}>
                 <div className={homeCSS.buttondiv}>
+                  <div className={homeCSS.author}>
+                    <img src={authorph} className={homeCSS.authorph} alt="" />
+                    <span>Username</span>
+                  </div>
+                  <div className={homeCSS.btncontainer}>
                   <button className={homeCSS.likebtn} >
-                      <FavoriteIcon color="error" />
-                      {/* <FavoriteIcon color="action" /> */}
+                      <FavoriteIcon/>
                   </button>
-                  <button className={homeCSS.button}>Delete</button>
+                  <button className={homeCSS.delbtn}><DeleteIcon/></button>
+                  </div>
+                  
                 </div>
                 <div className={homeCSS.label}>Loreen ipsum sit dolor amet</div>
               </div>

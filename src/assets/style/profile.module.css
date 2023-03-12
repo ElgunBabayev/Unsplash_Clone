@@ -29,3 +29,44 @@
 .userdescript{
 font-size: 15px;
 }
+.tabscontainer{
+    display: flex;
+    gap: 20px; 
+    padding: 0;
+    justify-content: space-between;
+}
+.tabs{
+    display: flex;
+    margin-left: 60px;
+}
+.addphoto{
+    background-color: transparent;
+    border: none;
+    font-family:Poppins;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 60px;
+    color: gray;
+}
+.addphoto:hover{
+    color: black;
+}
+.activeTab{
+    padding: 10px 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: gray;
+    background-color: transparent;
+    border: none;
+}
+.activeTab:hover {
+    color: black;
+}
+.line{
+    margin: 0;
+}
