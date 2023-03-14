@@ -35,6 +35,7 @@ function Login() {
                 <Field
                   className={loginCSS.einput}
                   name="email"
+                  type= "email"
                   placeholder="Email"
                 />
                 <div className={loginCSS.error}>

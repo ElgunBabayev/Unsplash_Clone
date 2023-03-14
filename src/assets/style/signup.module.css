@@ -19,13 +19,13 @@
   .background {
     display: flex;
     width: 25%;
-    height: 500px;
+    height: 600px;
     justify-content: center;
     align-items: center;
     padding: 20px;
     border-radius: 15px;
     border: gray 1px solid;
-    background-color:aliceblue
+    background-color:aliceblue;
   }
   .einput {
     border-radius: 7px;

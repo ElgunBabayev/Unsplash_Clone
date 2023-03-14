@@ -4,6 +4,8 @@ import { Formik, Form, ErrorMessage, Field } from "formik";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
 
+
+
 function SignUp() {
 
   const initialValues = {
@@ -38,9 +40,9 @@ function SignUp() {
         validationSchema={validationSchema}
         >
           {() => (
-            <Form>
+            
               <Form className={signupCSS.form}>
-                <div className={signupCSS.field}>
+                  <div className={signupCSS.field}>
                   <div className={signupCSS.label}>Username</div>
                   <Field
                     className={signupCSS.einput}
@@ -56,6 +58,7 @@ function SignUp() {
                   <Field
                     className={signupCSS.einput}
                     name="email"
+                    type= "email"
                     placeholder="Email"
                   />
                   <div className={signupCSS.error}>
@@ -67,6 +70,7 @@ function SignUp() {
                   <Field
                     className={signupCSS.einput}
                     name="password"
+                    type= "password"
                     placeholder="Password"
                   />
                   <div className={signupCSS.error}>
@@ -78,6 +82,7 @@ function SignUp() {
                   <Field
                     className={signupCSS.einput}
                     name="confirmPassword"
+                    type= "password"
                     placeholder="Confirm password"
                   />
                   <div className={signupCSS.error}>
@@ -92,7 +97,6 @@ function SignUp() {
                   </Link>
                 </span>
               </Form>
-            </Form>
           )}
         </Formik>
       </div>
